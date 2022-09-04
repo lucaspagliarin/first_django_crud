@@ -26,15 +26,15 @@ First CRUD using Django
 ## Models
 
 Models são representações do Banco de Dados. Cada Model representa uma tabela no DB, seus atributos são as colunas.
-  from django.db import models
-  models.Model 
+>  from django.db import models
+>  models.Model 
 
 - Adicionar o Model no admin.py
-    admin.site.register(Model)
+> admin.site.register(Model)
 
 - Gerar Migrations
-    python manage.py makemigration
-    python manage.py migrate
+>    python manage.py makemigration
+>    python manage.py migrate
 
 - Funções do Objeto Model
-    https://docs.djangoproject.com/en/4.1/topics/db/queries/
+> https://docs.djangoproject.com/en/4.1/topics/db/queries/
