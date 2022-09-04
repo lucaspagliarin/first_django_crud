@@ -36,6 +36,7 @@ Models são representações do Banco de Dados. Cada Model representa uma tabela
 
 - Gerar Migrations
 >    python manage.py makemigration
+
 >    python manage.py migrate
 
 - Funções do Objeto Model
