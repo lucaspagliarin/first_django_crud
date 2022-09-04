@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: linen;
+          text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: maroon;
+        }
+
+        a 
+
+        h1 {
+          color: maroon;
+          margin-left: 40px;
+        }
+        </style>
+</head>
+<body>
+    
+    <h1> Listagem de Pessoas</h1>
+
+    <form action="{% url 'salvar' %}" method="POST">
+        {% csrf_token %}
+        Adicionar Pessoa: <br/>
+        <input type="text" name="nome">
+        <button type="submit">Salvar</button>
+
+    </form>
+
+    <ul>
+        {% for pessoa in pessoas %}
+        <li> 
+            {{ pessoa.id }} - {{ pessoa.name }} 
+            <a href="{% url 'editar' pessoa.id %}">:)</a>
+            <a href="{% url 'delete' pessoa.id %}">Deletar</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
