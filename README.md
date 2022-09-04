@@ -2,12 +2,12 @@
 
 First CRUD using Django
 
-> What is CRUD?
-  CRUD é a sigla pra Create, Read, Update e Delete.
+- What is CRUD?
+>  CRUD é a sigla pra Create, Read, Update e Delete.
   São funções importantes para manipulação de dados em banco de dados.
 
-> Why DJANGO?
-  Achei Django uma maneira facil e rápida de implementar aplicações WEB. Depois de anos distante da programação, achei uma maneira facil de recomeçar e praticar minhas habilidades de programação
+- Why DJANGO?
+>  Achei Django uma maneira facil e rápida de implementar aplicações WEB. Depois de anos distante da programação, achei uma maneira facil de recomeçar e praticar minhas habilidades de programação
 
 ## Inicializando a Aplicação
 - pipenv install django
